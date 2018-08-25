@@ -211,9 +211,9 @@ Strap the camera to a convenient tree and enjoy the pictures.
 ```bash
 $ git checkout arduino
 ```
-1. Edit `src/motion_camera_secrets.hpp` and replace the placeholder text with your
+2. Edit `src/motion_camera_secrets.hpp` and replace the placeholder text with your
 own secrets.
-1. Try to build the project. If you get compiler errors like this:
+3. Try to build the project. If you get compiler errors like this:
 ```
     undefined reference to 'std::ios_base::Init::~Init()'
 ```
@@ -222,11 +222,11 @@ it means that the linking step couldn't find the C++ Standard Library. To solve 
 ```bash
 ${INSTALL_FOLDER}/Arduino15/packages/adafruit/hardware/samd/1.2.1/platform.txt
 ```
-1. Locate this line:
+4. Locate this line:
 ```ini    
 compiler.c.elf.cmd=arm-none-eabi-gcc
 ```
-1. Change the line to:
+5. Change the line to:
 ```ini
 compiler.c.elf.cmd=arm-none-eabi-g++
 ```
@@ -238,7 +238,7 @@ You should now be able to compile and link without further problems.
 ```bash
 $ git checkout platformio
 ```
-1. Create of modify your `platformio.ini` to include:
+2. Create of modify your `platformio.ini` to include:
 
 ```ini
 [platformio]
