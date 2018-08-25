@@ -218,17 +218,16 @@ own secrets.
     undefined reference to 'std::ios_base::Init::~Init()'
 ```
 and, a lot more saying undefined reference to something in the namespace `std::`,
-it means that the linking step couldn't find the C++ Standard Library.
-    1. To solve this, edit
-```
+it means that the linking step couldn't find the C++ Standard Library. To solve this, edit
+```bash
 ${INSTALL_FOLDER}/Arduino15/packages/adafruit/hardware/samd/1.2.1/platform.txt
 ```
-    1. Locate this line:
-```    
+1. Locate this line:
+```ini    
 compiler.c.elf.cmd=arm-none-eabi-gcc
 ```
-    1. Change the line to:
-```
+1. Change the line to:
+```ini
 compiler.c.elf.cmd=arm-none-eabi-g++
 ```
 You should now be able to compile and link without further problems.
