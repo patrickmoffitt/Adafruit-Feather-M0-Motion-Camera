@@ -59,8 +59,8 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
-#include <base64.hpp>
-
+#include "base64.hpp"
+#include "motion_camera_secrets.hpp"
 
 // Settings
 #define CAMERA_ENABLE_PIN PIN_A0
