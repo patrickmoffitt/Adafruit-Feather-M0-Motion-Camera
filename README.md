@@ -288,6 +288,13 @@ want to connect to the AIO REST API using SSL. (All the code in this project
   assumes that you do.) To do that simply load the io.adafruit.com SSL certificate
   into the ATWINC1500. See <a href="https://learn.adafruit.com/adafruit-atwinc1500-wifi-module-breakout?view=all#updating-ssl-certificates">these directions</a> to learn how.
 
+#### Image Colors
+You may be wondering why the leaves and grass look gray. It's because the  camera
+is particularly sensitive to infrared light. It has to be to work in night mode.
+
+![Sample Image](/images/sample_image.png)
+
+
 #### Use Wisely
 It's not polite to spy on people without notice. Be sure to let people know you're
 operating the camera and sending the pictures to the Internet so that they can use
