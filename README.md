@@ -1,3 +1,5 @@
+MammalCam
+-----
 ### Motion Activated WiFi Camera Made with the Adafruit Feather M0
 
 This is a firmware application written in C++ using <a href="https://github.com/platformio/platformio-pkg-framework-arduinosam"> Arduino</a>
@@ -10,7 +12,7 @@ API</a>.
 ![Motion Camera](/images/image22.jpg)
 
 #### Motivation
-I've long wanted to mess around with an automatic wildlife camera just for the
+I've long wanted to play with an automatic wildlife camera just for the
 fun of it. We have lots of deer in our neighborhood and this camera is intended
 to take pictures of them eating my wife's garden.
 
@@ -27,7 +29,7 @@ to command the camera to:
 
 
 ##### Materials
-Here's a list of all the parts that went into this project.
+Here's a list of all the parts that went into this project. (Some items were absent the day I took the group photo.)
 
 ![Motion Camera Exploded View](/images/image01.jpg)
   * <a href="https://www.adafruit.com/product/613">Weatherproof TTL Serial JPEG
@@ -48,7 +50,7 @@ Here's a list of all the parts that went into this project.
   * <a href="https://www.adafruit.com/product/2940">Short Headers Kit for
   Feather - 12-pin + 16-pin Female Headers</a>
   * <a href="https://www.adafruit.com/product/3299">M2.5 Black Nylon Screw Set</a>
-  * <a href="https://www.adafruit.com/product/261">JST PH 2-Pin Cable - Female
+  * <a href="https://www.adafruit.com/product/261">JST PH (2mm) 2-Pin Cable - Female
   Connector 100mm</a>
   * 10K Ohm resistor 5%
   * <a href="http://a.co/d/dXckbb6">Cinch straps</a>
@@ -141,7 +143,9 @@ Connect one of the outer DC jack terminals to the ground bus on the FeatherWing.
 
 
 Connect the FeatherWing's BAT and GND terminals to the JST PH 2-Pin Cable and plug
-that into the PowerBoost 500 Basic.
+that into the PowerBoost 500 Basic. If you order this part from Adafruit the pins
+will be in the correct polarity. If you got it elsewhere, be sure to check the
+polarity and correct it before use.
 
 ![Connecting the FeatherWing to the PowerBoost 500 Basic](/images/image11.jpg)
 
@@ -153,7 +157,9 @@ have to adjust the gland.  Connect the green and white wires to TX and RX as sho
 ![Connecting the Weatherproof TTL Serial JPEG Camera to Power and Data](/images/image13.jpg)
 
 
-Stow the brown and yellow wires away in the bottom of the enclosure.
+Stow the brown and yellow wires (NTSC) away in the bottom of the enclosure. You
+might someday be able to stream this signal over WiFi for a LiveCam project so
+preserve them for the future.
 
 ![Store the Camera NTSC Wires Out of the Way](/images/image16.jpg)
 
@@ -164,9 +170,9 @@ Connect the red wire to 5V on the PowerBoost.
 
 Connect the black wire to pin 1 (emitter) of the PN2907A. Connect it's pin 2
 (base) to PIN_A0. Connect it's pin 3 (collector) to the GND bus. <a href="https://www.mouser.com/datasheet/2/68/pn2906-pm2907a-27764.pdf">According
-to the datasheet</a>, this transistor can sink up to 600 mA; more than enough
-to power the camera even with it's IR lights on. (Sink is another work for the
-place where current exits a system.)
+to the datasheet</a>, this transistor can sink up to 600 mA. That's more than
+enough to power the camera even with it's IR lights on. (Sink is another word for
+the place where current exits a system.)
 
 ![Sinking the Camera Through the PN2907A PNP Transistor](/images/image15.jpg)
 
@@ -178,7 +184,11 @@ goes low.
 
 
 Connecting the PIR output to PIN_A1. Also connect a 10K Ohm resistor (not
-shown) from this pin to ground on the DC jack.
+shown) from this pin to the second ground pin on the DC jack. Set the <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/testing-a-pir">retriggering</a> jumper on the PIR in the H position to permit retriggering.
+Adjust the sensitivity to the low side of the potentiometer. If you're wondering
+why, I have two reasons. One, the camera only has a ten foot range in night mode.
+And two, when using the unit outdoors there's more variability in the background temperature and this allows for more (false positive) triggering. To learn more
+checkout <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work">this article</a>.
 
 ![Connecting the PIR Output to PIN_A1](/images/image18.jpg)
 
@@ -189,7 +199,7 @@ less work to put it there and being inside meant it would stay dry.
 ![Assembled Iteration Zero](/images/image19.jpg)
 
 
-I soon discovered that the polycarbonate cover either absorbs or reflect IR light.
+I soon discovered that the polycarbonate cover either absorbs or reflects IR light.
 (The sensor was blind.) So I drilled a hole in the cover and epoxied the IR dome
 into it.
 
@@ -238,13 +248,13 @@ You should now be able to compile and link without further problems.
 ```bash
 $ git checkout platformio
 ```
-2. Create of modify your `platformio.ini` to include:
+2. Create or modify your `platformio.ini` to include:
 
 ```ini
 [platformio]
 ; MacOS X / Linux
 lib_extra_dirs =
-    ${env.HOME}/Documents/Arduino/libraries
+    ${env.HOME}/path/to/your/Arduino/libraries
 
 [common]
 lib_deps_external =
@@ -263,3 +273,11 @@ build_flags =
     '-DAIO_USERNAME="Your Adafruit user name"'
     '-DAIO_KEY="our secret AIO key"'
 ```
+##### Installing SSL Certificates
+If you're like me and you'd like to keep your AIO secret key a secret then you'll
+want to connect to the AIO REST API using SSL. (All the code in this project assumes that you do.) To do that simply load the io.adafruit.com SSL certificate into the ATWINC1500. See <a href="https://learn.adafruit.com/adafruit-atwinc1500-wifi-module-breakout?view=all#updating-ssl-certificates">these directions</a> to learn how.
+
+##### Use Wisely
+It's not polite to spy on people without notice. Be sure to let people know you're operating the camera and sending the pictures to the Internet so that they can use common sense when entering the area where the camera is active.
+
+![Warning; Security Cameras in Use!](/images/security-cameras-in-use.jpg)
