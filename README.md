@@ -29,7 +29,7 @@ to command the camera to:
 
 
 #### Materials
-Here's a list of all the parts that went into this project. (Some items were 
+Here's a list of all the parts that went into this project. (Some items were
 absent the day I took the group photo.)
 
 ![Motion Camera Exploded View](/images/image01.jpg)
@@ -69,7 +69,7 @@ The electrical connections are shown below.
 plastic enclosures is to use plastic stand-offs and epoxy. Use small screws on
 the top and stand-offs below.</p>
 
-<p>![Feather M0, FeatherWing Proto, PowerBoost 500 Basic, PN2907A PNP Transistor](/images/image02.jpg)</p></li>
+![Feather M0, FeatherWing Proto, PowerBoost 500 Basic, PN2907A PNP Transistor](/images/image02.jpg)</li>
 
 
 <li><p>Clean all the parts thoroughly with rubbing alcohol and a
@@ -77,8 +77,8 @@ clean cloth. To install, simply dab a little epoxy on the stand-offs and then se
 the part into the enclosure. Be sure you know where you want everything to go
 before you start gluing. Once you stick them in they're very hard to remove.</p>
 
-<p>![Circuit Board Mounting with M2.5 Hardware and Epoxy](/images/image12.jpg)
-</p></li>
+![Circuit Board Mounting with M2.5 Hardware and Epoxy](/images/image12.jpg)
+</li>
 
 
 <li><p>Place the battery into the enclosure as shown. The cord and the Feather's
@@ -86,26 +86,26 @@ battery terminal must be on the same side or the cord won't reach. Cut a bit of
 cardboard to just sit on top of the battery. Cut off a corner to allow the cord
 to get by. Hot glue the cardboard to the sides of the enclosure.</p>
 
-<p>![Battery Pack Cardboard Retainer](/images/image03.jpg)</p></li>
+![Battery Pack Cardboard Retainer](/images/image03.jpg)</li>
 
 
 <li><p>Cut some scrap foam to sit on top of the battery. It should compress
 slightly when you attach the lid to the enclosure. The pressure should be just
 enough to keep the battery still without pinching it. Be gentle with it.</p>
 
-<p>![Battery Pack Foam Retainer](/images/image04.jpg)</p></li>
+![Battery Pack Foam Retainer](/images/image04.jpg)</li>
 
 
 <li><p>You will need to drill a hole in the enclosure for the DC jack. Ideally
 the hole should be just big enough to allow the jack to pass through. Seal around
 the jack with silicone sealant or bathtub caulk to prevent leaks.</p>
 
-<p>![Panel Mount 2.1mm DC barrel jack](/images/image05.jpg)</p></li>
+![Panel Mount 2.1mm DC barrel jack](/images/image05.jpg)</li>
 
 
 <li><p>Here's a close-up showing a bit of caulk around the DC jack.</p>
 
-<p>![Mounting the DC Jack & Cable Gland](/images/image10.jpg)</p></li>
+![Mounting the DC Jack & Cable Gland](/images/image10.jpg)</li>
 
 
 <li><p>Drill a hole in the enclosure for the cable gland. Ideally the hole should
@@ -113,7 +113,7 @@ be just big enough to allow the gland to pass through. When you insert the gland
 into its hole it should sit on top of the o-ring provided. This provides a
 water tight seal.</p>
 
-<p>![Cable Gland PG-9](/images/image06.jpg)</p></li>
+![Cable Gland PG-9](/images/image06.jpg)</li>
 
 
 <li><p>Drill a hole in the enclosure for the camera mounting screw. Ideally the
@@ -122,7 +122,7 @@ will require you to use a screwdriver to thread the screw into the new hole. Be
 sure to place the hole far enough from the front that the camera can sit flat on
 top of the enclosure and swivel smoothly from side to side.</p>
 
-<p>![#10-32 x 1" Camera Mounting Hardware](/images/image07.jpg)</p></li>
+![#10-32 x 1" Camera Mounting Hardware](/images/image07.jpg)</li>
 
 
 <li><p>For the larger holes a step-drill really helps. This is what tradespersons
@@ -132,7 +132,7 @@ up through your drill library until you reach the final size. If you try to
 remove too much material at once the bit will bite hard into the plastic, get
 stuck, and jerk the drill out of your hand.</p>
 
-<p>![Step Drill](/images/image09.jpg)</p></li>
+![Step Drill](/images/image09.jpg)</li>
 
 
 <li><p>Once the DC jack is mounted, wire it up to the FeatherWing. The positive
@@ -140,7 +140,7 @@ terminal of the DC jack is the one in the center. Connect this terminal to the U
 terminal on the FeatherWing. The DC jack will feed the Feather to charge the battery.
 Connect one of the outer DC jack terminals to the ground bus on the FeatherWing.</p>
 
-<p>![Connecting the FeatherWing to the DC Jack](/images/image08.jpg)</p></li>
+![Connecting the FeatherWing to the DC Jack](/images/image08.jpg)</li>
 
 
 <li><p>Connect the FeatherWing's BAT and GND terminals to the JST PH 2-Pin Cable
@@ -148,7 +148,7 @@ and plug that into the PowerBoost 500 Basic. If you order this part from Adafrui
 the pins will be in the correct polarity. If you got it elsewhere, be sure to check the
 polarity and correct it before use.</p>
 
-<p>![Connecting the FeatherWing to the PowerBoost 500 Basic](/images/image11.jpg)</p></li>
+![Connecting the FeatherWing to the PowerBoost 500 Basic](/images/image11.jpg)</li>
 
 
 <li><p>Cut off the excess cable on the camera. Leave enough extra on the inside
@@ -156,19 +156,19 @@ of the enclosure that that you can remove the circuit boards with wires attached
 and not have to adjust the gland.  Connect the green and white wires to TX and RX
 as shown.</p>
 
-<p>![Connecting the Weatherproof TTL Serial JPEG Camera to Power and Data](/images/image13.jpg)</p></li>
+![Connecting the Weatherproof TTL Serial JPEG Camera to Power and Data](/images/image13.jpg)</li>
 
 
 <li><p>Stow the brown and yellow wires (NTSC) away in the bottom of the enclosure.
 You might someday be able to stream this signal over WiFi for a LiveCam project so
 preserve them for the future.</p>
 
-<p>![Store the Camera NTSC Wires Out of the Way](/images/image16.jpg)</p></li>
+![Store the Camera NTSC Wires Out of the Way](/images/image16.jpg)</li>
 
 
 <li><p>Connect the red wire to 5V on the PowerBoost.</p>
 
-<p>![Shunt Connecting EN and LBO](/images/image14.jpg)</p></li>
+![Shunt Connecting EN and LBO](/images/image14.jpg)</li>
 
 <li><p>Connect the black wire to pin 1 (emitter) of the PN2907A. Connect it's pin
 2 (base) to PIN_A0. Connect it's pin 3 (collector) to the GND bus. <a href="https://www.mouser.com/datasheet/2/68/pn2906-pm2907a-27764.pdf">According
@@ -176,13 +176,13 @@ to the datasheet</a>, this transistor can sink up to 600 mA. That's more than
 enough to power the camera even with it's IR lights on. (Sink is another word for
 the place where current exits a system.)</p>
 
-<p>![Sinking the Camera Through the PN2907A PNP Transistor](/images/image15.jpg)</p></li>
+![Sinking the Camera Through the PN2907A PNP Transistor](/images/image15.jpg)</li>
 
 <li><p>Connect the PIR to 5V, and GND. Install a wire, or a pair of male headers
 with a shunt, on the EN and LBO pins. This will shutdown the PowerBoost when the
 battery goes low.</p>
 
-<p>![Connecting the Camera to 5V, and GND](/images/image17.jpg)</p></li>
+![Connecting the Camera to 5V, and GND](/images/image17.jpg)</li>
 
 
 <li><p>Connecting the PIR output to PIN_A1. Also connect a 10K Ohm resistor (not
@@ -195,30 +195,30 @@ temperature and this allows for more (false positive) triggering. To learn more
 checkout <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work">
 this article</a>.</p>
 
-<p>![Connecting the PIR Output to PIN_A1](/images/image18.jpg)</p></li>
+![Connecting the PIR Output to PIN_A1](/images/image18.jpg)</li>
 
 
 <li><p>The first time around I had the PIR motion sensor inside the enclosure. It
 was less work to put it there and being inside meant it would stay dry.</p>
 
-<p>![Assembled Iteration Zero](/images/image19.jpg)</p></li>
+![Assembled Iteration Zero](/images/image19.jpg)</li>
 
 
 <li><p>I soon discovered that the polycarbonate cover either absorbs or reflects
 IR light. (The sensor was blind.) So I drilled a hole in the cover and epoxied
 the IR dome into it.</p>
 
-<p>![Assembled Iteration One](/images/image20.jpg)</p></li>
+![Assembled Iteration One](/images/image20.jpg)</li>
 
 
 <li><p>Screw the straps to the back of the enclosure using the holes provided.</p>
 
-<p>![Attach Mounting Straps with #10 x0.5" Wood Screws](/images/image21.jpg)</p></li>
+![Attach Mounting Straps with #10 x0.5" Wood Screws](/images/image21.jpg)</li>
 
 
 <li><p>Strap the camera to a convenient tree and enjoy the pictures.</p>
 
-<p>![Motion Camera Mounted on a Cedar](/images/image22.jpg)</p></li>
+![Motion Camera Mounted on a Cedar](/images/image22.jpg)</li>
 </ol>
 
 ##### Building the Code with the Arduino IDE
