@@ -221,7 +221,7 @@ the IR dome into it.</p>
 ![Motion Camera Mounted on a Cedar](/images/image22.jpg)</li>
 </ol>
 
-##### Building the Code with the Arduino IDE
+#### Building the Code with the Arduino IDE
 1. Checkout the arduino branch of the project.
 ```bash
 $ git checkout arduino
@@ -249,7 +249,7 @@ compiler.c.elf.cmd=arm-none-eabi-g++
 You should now be able to compile and link without further problems.
 
 
-##### Building the Code with Platform IO
+#### Building the Code with Platform IO
 
 1. Checkout the __platformio__ branch of the project.
   ```bash
@@ -282,13 +282,13 @@ You should now be able to compile and link without further problems.
   ```
 
 
-##### Installing SSL Certificates
+#### Installing SSL Certificates
 If you're like me and you'd like to keep your AIO secret key a secret then you'll
 want to connect to the AIO REST API using SSL. (All the code in this project
   assumes that you do.) To do that simply load the io.adafruit.com SSL certificate
   into the ATWINC1500. See <a href="https://learn.adafruit.com/adafruit-atwinc1500-wifi-module-breakout?view=all#updating-ssl-certificates">these directions</a> to learn how.
 
-##### Use Wisely
+#### Use Wisely
 It's not polite to spy on people without notice. Be sure to let people know you're
 operating the camera and sending the pictures to the Internet so that they can use
 common sense when entering the area where the camera is active.
