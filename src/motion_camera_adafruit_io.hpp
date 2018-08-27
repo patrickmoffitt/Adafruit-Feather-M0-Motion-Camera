@@ -65,6 +65,7 @@
 // Settings
 #define CAMERA_ENABLE_PIN PIN_A0
 #define CAMERA_COMPRESSION 0x00
+#define CAMERA_AUTO_EXPOSURE_DELAY_MS 5000
 #define CAMERA_IMAGE_DIMENSIONS VC0706_640x480
 #define CAMERA_BAUD ((unsigned long)115200)
 #define CAMERA_BUFFER 64  // Do not change. Use 64 or base64 encoding will break.

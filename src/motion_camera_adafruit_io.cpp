@@ -40,7 +40,7 @@ void Motion_camera::setup_camera(void) {
 
 void Motion_camera::camera_on(void) {
     digitalWrite(CAMERA_ENABLE_PIN, LOW);
-    delay(3000);
+    delay(CAMERA_AUTO_EXPOSURE_DELAY_MS);
     // Try to locate the camera
     if (camera.begin(CAMERA_BAUD) == 1) {
         ERROR_PRINTLN(F("Camera found."));
