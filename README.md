@@ -187,7 +187,7 @@ battery goes low.</p>
 
 <li><p>Connecting the PIR output to PIN_A1. Also connect a 10K Ohm resistor (not
 shown) from this pin to the second ground pin on the DC jack. Set the <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/testing-a-pir">retriggering</a>
-jumper on the PIR in the H position to permit retriggering.
+jumper on the PIR in the L position to prevent retriggering.
 Adjust the sensitivity to the low side of the potentiometer. If you're wondering
 why, I have two reasons. One, the camera only has a ten foot range in night mode.
 And two, when using the unit outdoors there's more variability in the background
