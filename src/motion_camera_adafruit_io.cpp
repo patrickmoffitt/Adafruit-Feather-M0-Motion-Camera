@@ -100,7 +100,7 @@ const char *Motion_camera::server      = ADAFRUIT_IO_SERVER_NAME;
 const char *Motion_camera::username    = AIO_USERNAME;
 const char *Motion_camera::password    = AIO_KEY;
 const char *Motion_camera::group_key   = ADAFRUIT_IO_GROUP_KEY;
-const char *Motion_camera::feed_name   = ADAFRUIT_IO_FEDD_NAME;
+const char *Motion_camera::feed_name   = ADAFRUIT_IO_FEED_NAME;
 
 
 std::array<const char *, 4> Motion_camera::http_responses =

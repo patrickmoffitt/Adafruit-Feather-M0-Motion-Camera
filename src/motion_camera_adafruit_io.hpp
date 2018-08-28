@@ -73,7 +73,7 @@
 #define ADAFRUIT_IO_API_VERSION "2"
 #define ADAFRUIT_IO_SERVER_NAME "io.adafruit.com"
 #define ADAFRUIT_IO_GROUP_KEY "motion-camera"
-#define ADAFRUIT_IO_FEDD_NAME "images"
+#define ADAFRUIT_IO_FEED_NAME "images"
 
 // Error codes.
 #define HTTPS_NO_CONNECTION_TO_HOST 1
