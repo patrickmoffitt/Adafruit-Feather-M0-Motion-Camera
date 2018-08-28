@@ -59,7 +59,10 @@ absent the day I took the group photo.)
 
 
 #### Schematic
-The electrical connections are shown below.
+The electrical connections are shown below. The feather runs on 3.3V. Both the
+camera and the PIR run on 5V supplied by the PowerBoost. The PIR is always on.
+The camera is software switched on/off from PIN_A1.
+
 ![Motion Camera Schematic](/images/motion_camera_schematic.svg)
 
 
