@@ -1,8 +1,7 @@
 MammalCam
 -----
-Watch a Short (5 min) Video Introduction on
-<a href="https://youtu.be/U1WP73mPQZk"><img src="images/YouTube.jpg" alt="YouTube"/>
-</a>
+Watch a Short (5 min) Video Introduction on <a href="https://youtu.be/U1WP73mPQZk">
+YouTube</a>
 
 ### Motion Activated WiFi Camera Made with the Adafruit Feather M0
 
