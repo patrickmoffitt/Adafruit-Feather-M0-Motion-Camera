@@ -1,5 +1,9 @@
 MammalCam
 -----
+Watch a Short (5 min) Video Introduction on
+<a href="https://youtu.be/U1WP73mPQZk"><img height="24" src="images/YouTube.png" alt="YouTube"/>
+</a>
+
 ### Motion Activated WiFi Camera Made with the Adafruit Feather M0
 
 This is a firmware application written in C++ using <a href="https://github.com/platformio/platformio-pkg-framework-arduinosam"> Arduino</a>
@@ -196,7 +200,7 @@ why, I have two reasons. One, the camera only has a ten foot range in night mode
 And two, when using the unit outdoors there's more variability in the background
 temperature and this allows for more (false positive) triggering. To learn more
 checkout <a href="https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work">
-this article</a>.</p>
+this article</a>. Adjust the time potentiometer to it's minimum setting.</p>
 
 ![Connecting the PIR Output to PIN_A1](/images/image18.jpg)</li>
 
