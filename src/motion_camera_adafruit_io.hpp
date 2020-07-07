@@ -59,6 +59,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <array>
 #include "base64.hpp"
 
 
